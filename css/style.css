@@ -61,5 +61,11 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 5vw);
-    grid-gap: 15px;
+    grid-gap: 1rem;
+}
+
+.gallery > * {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
 }
