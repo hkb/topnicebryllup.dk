@@ -68,7 +68,9 @@
   <section>
     <h2>Program</h2>
 
-    Vi er ikke så traditionelle så forvent ikke at vi skærer kage, kaster buket, brudevals og sådan. Til gengæld glæder vi os til at fejre vores kærlighed med jer alle sammen og ryste røv på dansegulvet.
+    Vi er ikke så traditionelle så forvent ikke at vi skærer kage, kaster buket, brudevals og sådan.
+    <br />
+    Til gengæld glæder vi os til at fejre vores kærlighed med jer alle sammen og ryste røv på dansegulvet.
 
     <br /><br />
 
@@ -95,7 +97,7 @@
         <td>23:00</td>
         <td>
           <b>FÆÆÆÆÆST</b> med band og blæs og drinks 🎺💃🏻🕺🏽🍹🍸<br />
-          <a href="javascript:getThePartyStarted();false;" class="btn">🥳 &nbsp; Get the Party Started! &nbsp; 🥳</a>
+          <a href="javascript:getThePartyStarted();false;" class="btn">🥳 &nbsp; Klar til fest? Tryk her! &nbsp; 🥳</a>
         </td>
       </tr>
     </table>
@@ -147,13 +149,14 @@
 
     function getThePartyStarted() {
       const confetti = [
-        {emojis: ['🦄'],emojiSize: 100, confettiNumber: 30, bg:'#ff0a54'},
+        {emojis: ['🦄'],emojiSize: 120, confettiNumber: 30, bg:'#ff0a54'},
         {confettiColors: ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7']},
         {confettiColors: ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7']},
         {emojis: ['🥳', ' 🎉'],emojiSize: 100, confettiNumber: 30, bg:'#947EC3'},
         {emojis: ['💖'],emojiSize: 200, confettiNumber: 10, bg:'#ff85a1'},
         {emojis: ['🍾', ' 🥂'],emojiSize: 100, confettiNumber: 30, bg:'#EEF3D2'},
-        {emojis: ['🎺', ' 🕺🏽', '💃🏻', '🍹', '🍸'],emojiSize: 100, confettiNumber: 30, bg:'#5534A5'},
+        {emojis: ['🍹', '🍸'],emojiSize: 100, confettiNumber: 20, bg:'#fbb1bd'},
+        {emojis: ['🎺', ' 🕺🏽', '💃🏻'],emojiSize: 200, confettiNumber: 10, bg:'#5534A5'},
         {confettiColors: ['#6A67CE', '#947EC3', '#B689C0', '#EEF3D2'], bg:'#f9bec7'},
         {confettiColors: ['#A85CF9', '#5534A5', '#4B7BE5', '#6FDFDF'], bg:'#ff477e'}
       ]
@@ -173,6 +176,9 @@
 
       audio.play();
       setTimeout(function() {
+        jsConfetti.addConfetti({confettiColors: ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7']});
+        jsConfetti.addConfetti({confettiColors: ['#6A67CE', '#947EC3', '#B689C0', '#EEF3D2','#A85CF9', '#5534A5', '#4B7BE5', '#6FDFDF']});
+
         shoot();
         shoot();
       }, 750);
